@@ -14,5 +14,8 @@ environments where another libc does not exist, since rustc may
 implicitly insert calls to such functions.
 """
 
-[dependencies.core]
+[target.thumbv7m-none-eabi.dependencies.core]
+git = "https://github.com/hackndev/rust-libcore"
+
+[target.thumbv7em-none-eabi.dependencies.core]
 git = "https://github.com/hackndev/rust-libcore"
